@@ -107,7 +107,8 @@ const Login = () => {
               type="submit"
               fullWidth
               variant="contained"
-              color="primary"
+              sx={{ bgcolor: '#1a1a40' }}
+
               style={{ margin: '10px 0 20px' }}
             >
               Sign in
@@ -117,7 +118,8 @@ const Login = () => {
               fullWidth
               variant="outlined"
               startIcon={<GoogleIcon />}
-              style={{ margin: '20px 0 10px' }}
+              sx={{ mt: 2, mb: 2, bgcolor: '#1a1a40' }}
+
             >
               Continue with Google
             </Button>
@@ -125,7 +127,8 @@ const Login = () => {
               fullWidth
               variant="outlined"
               startIcon={<AppleIcon />}
-              style={{ marginBottom: '20px' }}
+              sx={{ mt: 2, mb: 2, bgcolor: '#1a1a40' }}
+
             >
               Sign in with Apple
             </Button>
