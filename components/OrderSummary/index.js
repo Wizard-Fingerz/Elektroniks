@@ -4,7 +4,12 @@ import { useRouter } from 'next/router';
 
 const OrderSummary = ({ cartItems }) => {
   const router = useRouter();
-  const subtotal = cartItems.reduce((acc, item) => acc + item.quantity * item.price, 0);
+  let subtotal = 0;
+
+  if (Array.isArray(cartItems)) {
+    subtotal = cartItems.reduce((acc, item) => acc + item.quantity * item.price, 0);
+  }
+  
   const tax = subtotal * 0.08;
   const total = subtotal + tax;
 
