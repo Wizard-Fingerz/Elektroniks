@@ -102,14 +102,14 @@ const JumboBody = ({ scenario }) => {
             <>
               <Button
                 variant="contained"
-                sx={{ bgcolor: '#1a1a40', mr: 2 }}
+                sx={{ bgcolor: '#1a1a40', my: 2, mr: 2 }}
                 onClick={() => handleButtonClick('login')}
               >
                 Log In
               </Button>
               <Button
                 variant="contained"
-                sx={{ bgcolor: '#1a1a40' }}
+                sx={{ bgcolor: '#1a1a40', my:2 }}
                 onClick={() => handleButtonClick('register')}
               >
                 Get Started
