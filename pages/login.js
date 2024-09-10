@@ -116,7 +116,7 @@ const Login = () => {
             <Divider>or</Divider>
             <Button
               fullWidth
-              variant="outlined"
+              variant="contained"
               startIcon={<GoogleIcon />}
               sx={{ mt: 2, mb: 2, bgcolor: '#1a1a40', color: 'white' }}
 
@@ -125,7 +125,7 @@ const Login = () => {
             </Button>
             <Button
               fullWidth
-              variant="outlined"
+              variant="contained"
               startIcon={<AppleIcon />}
               sx={{ mt: 2, mb: 2, bgcolor: '#1a1a40', color: 'white' }}
 

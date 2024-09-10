@@ -214,7 +214,7 @@ const RegisterForm = () => {
         </Typography>
         <Button
           fullWidth
-          variant="outlined"
+          variant="contained"
           startIcon={<GoogleIcon />}
           size="large"
           sx={{ mt: 2, mb: 2,bgcolor: '#1a1a40', color: 'white' }}
