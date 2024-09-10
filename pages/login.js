@@ -118,7 +118,7 @@ const Login = () => {
               fullWidth
               variant="outlined"
               startIcon={<GoogleIcon />}
-              sx={{ mt: 2, mb: 2, bgcolor: '#1a1a40' }}
+              sx={{ mt: 2, mb: 2, bgcolor: '#1a1a40', color: 'white' }}
 
             >
               Continue with Google
@@ -127,7 +127,7 @@ const Login = () => {
               fullWidth
               variant="outlined"
               startIcon={<AppleIcon />}
-              sx={{ mt: 2, mb: 2, bgcolor: '#1a1a40' }}
+              sx={{ mt: 2, mb: 2, bgcolor: '#1a1a40', color: 'white' }}
 
             >
               Sign in with Apple

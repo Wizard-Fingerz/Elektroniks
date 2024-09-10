@@ -203,7 +203,7 @@ const RegisterForm = () => {
             variant="contained"
             color="primary"
             size="large"
-            sx={{ mt: 2, mb: 2, bgcolor: '#1a1a40'  }}
+            sx={{ mt: 2, mb: 2, bgcolor: '#1a1a40', color: 'white'  }}
           >
             Agree & Join
           </Button>
@@ -217,7 +217,7 @@ const RegisterForm = () => {
           variant="outlined"
           startIcon={<GoogleIcon />}
           size="large"
-          sx={{ mt: 2, mb: 2,bgcolor: '#1a1a40'  }}
+          sx={{ mt: 2, mb: 2,bgcolor: '#1a1a40', color: 'white' }}
           
         >
           Continue with Google
