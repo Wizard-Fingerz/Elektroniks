@@ -68,7 +68,7 @@ const Header = () => {
   const [cartItems, setCartItems] = useState([]); // add this state to store cart items
   const [token, setToken] = useState(null); // add this state to store token
   const router = useRouter();
-  
+
   useEffect(() => {
     const token = localStorage.getItem('token');
     setToken(token);
@@ -211,16 +211,20 @@ const Header = () => {
               <Button color="inherit" sx={{ display: { xs: 'none', md: 'block' } }}>
                 Become a Vendor
               </Button>
-              <Button color="inherit" sx={{ display: { xs: 'none', md: 'block' } }}>
+              <Button color="inherit" sx={{ display: { xs: 'none', md: 'block' } }} onClick={() => {
+                localStorage.removeItem('token');
+                router.push('/');
+                window.location.reload();
+              }}>
                 Logout
               </Button>
             </>
           ) : (
             <>
-              <Button color="inherit" sx={{ display: { xs: 'none', md: 'block' } }}>
+              <Button href="/login" color="inherit" sx={{ display: { xs: 'none', md: 'block' } }}>
                 Login
               </Button>
-              <Button color="inherit" sx={{ display: { xs: 'none', md: 'block' } }}>
+              <Button href="/register" color="inherit" sx={{ display: { xs: 'none', md: 'block' } }}>
                 Register
               </Button>
             </>
